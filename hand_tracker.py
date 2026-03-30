@@ -1,8 +1,11 @@
 import streamlit as st
 import cv2
+import mediapipe.python.solutions  # 👈 新加这一行，强行绕过拦截，逼它吐出真实报错！
 import mediapipe as mp
 import numpy as np
 from PIL import Image
+
+# ... 后面的代码保持不变 ...
 
 # ==========================================
 # 🖐️ 路线三：魔法进阶 —— 隔空手势追踪 (骨骼激活篇)
